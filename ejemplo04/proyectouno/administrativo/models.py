@@ -31,6 +31,9 @@ class Modulo(models.Model):
     opciones_modulo = (
         ('1', 'Primero'),
         ('2', 'Segundo'),
+        ('3', 'Tercero'),
+        ('4', 'Cuarto'),
+        ('5', 'Quinto'),
         )
 
     nombre = models.CharField(max_length=30, \

@@ -44,6 +44,6 @@ class NumeroTelefonicoAdmin(admin.ModelAdmin):
     raw_id_fields = ('estudiante',)
     
     def get_estudiante(self, obj):
-        """ """
-        return obj.estudiante.apellido
+        # return obj.estudiante.nombre + "|" + obj.estudiante.apellido 
+        return "%s | %s" % (obj.estudiante.nombre, obj.estudiante.apellido)
 admin.site.register(NumeroTelefonico, NumeroTelefonicoAdmin)
